@@ -1,0 +1,139 @@
+body {
+    display: flex;            
+  justify-content: center;  
+  align-items: center;     
+  height: 100vh; 
+}
+
+.main {
+    border: 10px solid black;
+    width: 380px;
+    height: 555px;
+    border-radius: 25px;
+    display: block;
+    background-color: #29292b;;
+}
+
+.display {
+    display: flex;
+    width: 380px;
+    height: 120px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: lightgreen;
+    border-right: 15px solid lightgreen;
+    border-bottom: 10px solid lightgreen;
+    border-top: 10px solid lightgreen;
+    box-sizing: border-box;
+    font-size: 70px;
+    justify-content: end;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 430px;
+    padding: 3px;
+}
+
+.top-row {
+    display: flex;
+    height: 85px;
+}
+
+#ac, #sign, #divide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E4E6EB;
+    background-color: #5e5f61;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+#ac {
+    width: calc(100% / 2);
+}
+
+#sign {
+    width: calc(100% / 4);
+}
+
+#divide {
+    width: calc(100% / 4);
+    background-color: #FFAE42;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75.5%;
+}
+
+.number {
+    flex-grow: 1;
+    width: 5rem;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 2px solid #E4E6EB;
+    background-color: #29292b;
+}
+
+button {
+    color: white;
+}
+
+#decimal {
+    width: 5.8rem;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 2px solid #E4E6EB;
+    background-color: #29292b
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 4)
+}
+
+.operator-button, .button {
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E4E6EB;
+    background-color: #FFAE42;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.equals {
+      width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E4E6EB;
+    background-color: #FFAE42;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05); /* Increase button size */
+}
